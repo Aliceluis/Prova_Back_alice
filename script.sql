@@ -1,4 +1,4 @@
-create database Agendamentos
+create database senai
 use senai
 
 CREATE TABLE Agendamentos (
