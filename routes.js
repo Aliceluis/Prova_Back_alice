@@ -20,8 +20,8 @@ routes.get('/', async (req, res)=>{
 
 routes.post('/Agendamento/novo', async (req, res)=>{
     try{
-        const { data_agendamento, hora,reserva} = req.body;
-        await pool.query`insert into Agendamentos values(${data_agendamento},${hora},${reserva})`
+        const { data_agendamento, horario,reserva} = req.body;
+        await pool.query`insert into Agendamentos values(${data_agendamento},${horario},${reserva})`
         return res.status(201).json(`agendamento criado com sucesso`)
     }
     catch(error){
